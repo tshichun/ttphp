@@ -3,7 +3,7 @@
  * 苹果IAP支付接口
  * https://developer.apple.com/in-app-purchase/
  */
-class Library_Sdk_Pay_Apple {
+class Apple_Pay_Sdk_Library {
     protected $_sandbox;
     protected $_verifyUrl;
 
