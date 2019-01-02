@@ -2,10 +2,10 @@
 
 ```
 server {
-    location ~ /(\.|var|README) {
+	location ~ /(\.|var|README) {
 		deny all;
 	}
-    location ~ ^/api {
+	location ~ ^/api {
 		rewrite ^/api(.*)?(.*)$ /index.php?r=$1$2 last;
 	}
 }
