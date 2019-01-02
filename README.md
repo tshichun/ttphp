@@ -1,5 +1,6 @@
 # ttphp
 
+```
 server {
     location ~ /(\.|var|README) {
 		deny all;
@@ -8,3 +9,4 @@ server {
 		rewrite ^/api(.*)?(.*)$ /index.php?r=$1$2 last;
 	}
 }
+```
