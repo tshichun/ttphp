@@ -53,14 +53,8 @@ class F {
      * 生成随机串
      */
     public static function randStr($len=5) {
-        $src = '345678ABCDEFGHJKLMNPRSTUVWYZabcdefhjkmnprstuvwyz';
-        $max = strlen($src) - 1;
-        $str = '';
-        for ($i = 0; $i < $len; $i++) {
-            $k = mt_rand(0, $max);
-            $str .= $src{$k};
-        }
-        return $str;
+        $src = str_shuffle('345678ABCDEFGHJKLMNPRSTUVWYZabcdefhjkmnprstuvwyz');
+		return substr($src, 0, $len);
     }
 
     /**
